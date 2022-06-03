@@ -1,0 +1,14 @@
+# docker-services/docker-compose.yml
+version: "3.9"
+
+services:
+  db:
+    image: "postgres:13.4"
+    env_file: .env
+    volumes:
+      - hello-visitor-postgres:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT}:5432
+
+volumes:
+  hello-visitor-postgres:

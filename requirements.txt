@@ -1,0 +1,19 @@
+fastapi
+
+# PostgreSQL database adapter:
+psycopg2-binary
+sqlalchemy
+
+# Pushes .env key-value pairs into environment variables:
+python-dotenv
+pydantic
+
+# Utility library to read database connection information:
+dj-database-url
+
+# Static file caching:
+whitenoise
+aiofiles
+
+# Python WSGI HTTP Server:
+uvicorn
